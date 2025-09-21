@@ -64,6 +64,21 @@
       .section {
         margin-bottom: 40px;
       }
+
+      /* Reduce vertical spacing inside the Education section */
+      #education td p {
+        margin: 6px 0; /* smaller top/bottom margins for paragraphs */
+      }
+      #education td {
+        padding-top: 6px; /* slightly reduce vertical padding to tighten rows */
+        padding-bottom: 6px;
+      }
+      /* Reduce vertical spacing for degree listing rows (keep horizontal spacing) */
+      /* Targets the table immediately following #education */
+      #education + table td {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+      }
     </style>
   </head>
 
@@ -74,7 +89,8 @@
         <p>
           <a href="#home">Home</a> &nbsp;/&nbsp;
           <a href="#education">Education</a> &nbsp;/&nbsp;
-          <a href="#projects">Projects</a>
+          <a href="#projects">Projects</a>&nbsp;/&nbsp;
+          <a href="#additional">Additional</a>
         </p>
       </div>
     </nav>
@@ -127,10 +143,7 @@
                     <p style="text-align: center">
                       <a href="mailto:ayeshasaleem853@gmail.com">Email</a>
                       &nbsp;/&nbsp;
-                      <a
-                        href="https://aysh34.github.io/assets/ayesha-resume.pdf"
-                        >Resume</a
-                      >
+                      <a href="data/ayesha-saleem-CV.pdf">CV</a>
                       &nbsp;/&nbsp;
                       <a href="https://www.linkedin.com/in/ayesha-saleem6/"
                         >LinkedIn</a
@@ -171,7 +184,7 @@
             >
               <tbody>
                 <tr>
-                  <td style="padding: 8px; width: 100%; vertical-align: middle">
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
                     <h2>Education</h2>
                     <p>
                       My academic journey and qualifications in computer science
@@ -193,7 +206,7 @@
             >
               <tbody>
                 <tr>
-                  <td style="padding: 8px; width: 100%; vertical-align: middle">
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
                     <a href="https://eum.edu.pk/">
                       <span class="papertitle"
                         >Bachelor of Science in Computer Science</span
@@ -203,7 +216,7 @@
                     <strong>Emerson University, Multan</strong>
                     <br />
                     <em>September 2023 - Present</em> |
-                    <em>CGPA: 3.86/4.0 (96.5%)</em>
+                    <em>CGPA: 3.88/4.0 (97%)</em>
                     <p></p>
                     <p>
                       Relevant coursework: Artificial Intelligence, Machine
@@ -214,23 +227,19 @@
                 </tr>
 
                 <tr>
-                  <td style="padding: 8px; width: 100%; vertical-align: middle">
-                    <span class="papertitle">F.Sc</span>
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
+                    <span class="papertitle">F.Sc (Pre-Medical)</span>
                     <br />
                     <strong>Women College, Muzaffargarh</strong>
                     <br />
                     <em>2021 - 2023</em> | <em>Marks: 1009/1100 (91.7%)</em>
                     <p></p>
-                    <p>
-                      Focus on Physics, Chemistry, and Mathematics. Awarded
-                      laptop through Shahbaz Sharif E-Youth Initiative for
-                      academic excellence.
-                    </p>
+                    <p>Relevant coursework: Physics, Chemistry, Biology.</p>
                   </td>
                 </tr>
 
                 <tr>
-                  <td style="padding: 8px; width: 100%; vertical-align: middle">
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
                     <span class="papertitle">Matriculation (Science)</span>
                     <br />
                     <strong>Government High School, Muzaffargarh</strong>
@@ -238,14 +247,14 @@
                     <em>2019 - 2021</em> | <em>Marks: 1055/1100 (95.9%)</em>
                     <p></p>
                     <p>
-                      Science specialization with distinction. Received Punjab
-                      Educational Endowment Fund (PEEF) scholarship for academic
-                      excellence.
+                      Relevant coursework: Mathematics, Physics, Chemistry,
+                      Biology.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
+
             <table
               id="projects"
               style="
@@ -536,9 +545,166 @@
                 <tr>
                   <td style="padding: 0px">
                     <br />
+                    <!-- Additional section: minimal insertion to preserve flow -->
+                    <table
+                      id="additional"
+                      style="
+                        width: 100%;
+                        border: 0px;
+                        border-spacing: 0px;
+                        border-collapse: separate;
+                        margin-right: auto;
+                        margin-left: auto;
+                      "
+                    >
+                      <!--<tbody>
+                        <tr>
+                          <td
+                            style="
+                              padding-left: 20px;
+                              width: 25%;
+                              vertical-align: middle;
+                            "
+                          >
+                            <span style="color: #1ba20c"
+                              ><strong
+                                ><font size="+1">Awards</font></strong
+                              ></span
+                            >
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Awarded NSF Graduate Research
+                            Fellowship [2023] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Received Special Research Distinction
+                            Award from UT Austin [2023] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Winner of the Capital of Texas
+                            Undergraduate Research Conference (CTURC) [2022]
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Best Virtual Reality Hack @Hack The
+                            Northeast [2021] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Best iOS App @Orion Hacks [2021]
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; First Award, Physical Science &
+                            Engineering, Synopsys Technology Championship [2019]
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Mu Alpha Theta Award for Excellence in
+                            Mathematics [2019] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Honorable Mention, Computational
+                            Systems & Analysis, California Science and
+                            Engineering Fair [2018] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; First Award, Biological Science &
+                            Engineering, Synopsys Technology Championship [2018]
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Naval Science Award, United States
+                            Navy & Marine Corps [2018] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Special Congressional Recognition -
+                            Congressional App Challenge [2017] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; AP National Scholar with Distinction,
+                            National Merit Scholarship Commended [2019] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Recognition for Science Research,
+                            Mayor of Cupertino [2018, 2019] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; Inspire Award, Silicon Valley Regional
+                            Robotics Competition [2017] <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp; USA Computing Olympiad (USACO) Gold
+                            Level [2017]
+
+                            <br />
+                            <br />
+                            <br />
+
+                            <span style="color: #1ba20c"
+                              ><strong
+                                ><font size="+1">Service</font></strong
+                              ></span
+                            >
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp;
+                            <strong
+                              >Conference reviewer for CoRL, ICML, RA-L (x5),
+                              IROS, ICRA
+                            </strong>
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp;
+                            <strong
+                              >Teaching Assistant for CS 343 Artificial
+                              Intelligence [Spring 2023]</strong
+                            >
+                            <br />
+                            <span style="padding-left: 26px"
+                              >Course website:
+                              <a
+                                href="https://rpl.cs.utexas.edu/cs343_spring2023/"
+                                >https://rpl.cs.utexas.edu/cs343_spring2023/</a
+                              ></span
+                            >
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp;
+                            <strong
+                              >Co-organizer, 12th Annual F1TENTH Racing
+                              Competition at CPS-IoT Week 2023 [2022 -
+                              2023]</strong
+                            >
+                            <br />
+                            <span style="padding-left: 26px"
+                              >Co-organized the 12th F1TENTH Racing Competition
+                              held in May 2023 at CPS-IoT Week</span
+                            >
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp;
+                            <strong
+                              >AURA Texas Representative [2022 -
+                              Present]</strong
+                            >
+                            <br />
+                            <span style="padding-left: 26px"
+                              >Present research to members of Congress; promote
+                              UT undergraduate research at other Texas
+                              universities</span
+                            >
+                            <br />
+                            <span style="color: #1933b6">&gt;</span> &nbsp;
+                            &nbsp; &nbsp;
+                            <strong
+                              >Research Ambassador at UT Austin [2021 -
+                              Present]</strong
+                            >
+                            <br />
+                            <span style="padding-left: 26px"
+                              >Serve in a Q&A panel in bimonthly undergraduate
+                              research events; promote undergraduate
+                              research</span
+                            >
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>-->
+
                     <p style="text-align: right; font-size: small">
-                      Website template originally from a public GitHub template.
-                      Modified and customized by Ayesha Saleem.
+                      Website adapted from
+                      <a href="https://jonbarron.info">Jon Barron</a>
                     </p>
                   </td>
                 </tr>
