@@ -1,1 +1,1 @@
-This is the source code to Ayesha Saleem's academic website. Originally forked from Jon Barron's website template (https://jonbarron.info/).
+This is the source code to Ayesha Saleem's academic website. Originally forked from Jon Barron's website template https://jonbarron.info/.
